@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Groq AI Language Model</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
+  <div class="bg-white rounded-lg shadow-lg p-6 max-w-xl w-full">
+    <h1 class="text-2xl font-semibold mb-6 text-center">Groq AI Language Model</h1>
+
+    <section class="mb-6">
+  <textarea id="prompt-input" rows="5" placeholder="Ingrese su pregunta aquí..." class="w-full p-3 border border-gray-300 rounded resize-none mb-4"></textarea>
+  <button id="submit-btn" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition flex items-center gap-2">
+    <i class="fas fa-paper-plane"></i> Enviar
+  </button>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold mb-2">Response</h2>
+      <pre id="response-output" class="whitespace-pre-wrap bg-gray-50 p-4 rounded border border-gray-300 min-h-[100px]"></pre>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
